@@ -17,7 +17,7 @@ if st.button("تجزیه نور توسط منشور"):
     st.write("این تصویر نشان می‌دهد چگونه نور سفید هنگام عبور از منشور به رنگ‌های مختلف تجزیه می‌شود.")
     try:
         image = Image.open("assets/prism.jpg")
-        st.image(image, caption="نور سفید و تجزیه آن", use_column_width=True)
+        st.image(image, caption="نور سفید و تجزیه آن", use_container_width=True)
     except:
         st.warning("تصویر موجود نیست. لطفاً تصویر 'prism.jpg' را در پوشه assets قرار دهید.")
 
